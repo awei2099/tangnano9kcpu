@@ -1,0 +1,25 @@
+#------------------------------------------------------------------------------
+# tangnano9k.pcf – Example pin constraints for Tang Nano 9K (Lattice ECP5)
+#
+# Please update these pin names to match your board’s silkscreen/revision!
+#------------------------------------------------------------------------------
+
+# Onboard 25 MHz clock oscillator
+set_io clk25m  J19
+
+# Active-low reset pushbutton
+set_io rst_n   J18
+
+# Eight user LEDs (tie out_port[0..7] → these 8 pins)
+set_io led[0]  J1
+set_io led[1]  J2
+set_io led[2]  J3
+set_io led[3]  J4
+set_io led[4]  J5
+set_io led[5]  J6
+set_io led[6]  J7
+set_io led[7]  J8
+
+#------------------------------------------------------------------------------
+# End of tangnano9k.pcf
+#------------------------------------------------------------------------------
